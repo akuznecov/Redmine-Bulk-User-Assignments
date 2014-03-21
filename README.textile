@@ -4,11 +4,11 @@ The Redmine Bulk User Assignments plugin was developed to provide a way to manag
 
 The plugin uses groups to manage what comes up in the plugin, due to some systems may have thousands of users.  By allowing group based settings, it minimizes going through many pages of lists.
 
-Why was this plugin necessary?  Redmine as of version 1.3.0 did not have a way to manage users easily.  If a user needed to be added to multiple projects, the user had to be added one at a time.  For a large number of projects, this becomes time consuming.
+Why was this plugin necessary?  Redmine did not have a way to manage multiple user assignments easily.  If a user needed to be added to multiple projects, the user had to be added one at a time.  For a large number of projects, this becomes time consuming.
 
 h2. Requirements
 
-* Redmine version 1.3.0
+* Redmine version => 2.1
 * Use of Redmine groups settings (part of Redmine core)
 
 h2. Terminology
@@ -17,7 +17,7 @@ h2. Terminology
 
 h2. Installation
 
-1.  Install the Bulk User Assignments plugin by placing the source code in the vendor/plugins/redmine_bulk_user_assignments directory.  No migration is necessary to install this plugin.
+1.  Install the Bulk User Assignments plugin by placing the source code in the plugins/redmine_bulk_user_assignments directory.  No migration is necessary to install this plugin.
 2.  Restart Redmine to complete the installation process.
 3.  Login as a Redmine admin to use.
 

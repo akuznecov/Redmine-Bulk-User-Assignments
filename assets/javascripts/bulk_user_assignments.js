@@ -1,12 +1,9 @@
-Event.observe(window, 'load', function() {
-
-    $$('.toggle-link').each(function(element){
-        element.observe('click', function(event){
-            event.element().up('div').select('input').each(function(checkbox){
-                checkbox.checked = true;
-            });
-            event.stop();
-        });
-    });
-
+$(document).ready(function(){
+    $('.toggle-link').toggle(function(){
+        $(this).parent().parent().find('input[type=checkbox]').attr('checked','checked');
+        $(this).val('uncheck all')
+    },function(){
+        $(this).parent().parent().find('input[type=checkbox]').removeAttr('checked');
+        $(this).val('check all');        
+    })
 });
